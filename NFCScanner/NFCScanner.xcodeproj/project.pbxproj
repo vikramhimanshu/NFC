@@ -14,6 +14,11 @@
 		650D86A41FFC8A4800590E69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 650D86A21FFC8A4800590E69 /* LaunchScreen.storyboard */; };
 		650D86AF1FFC8A4800590E69 /* NFCScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650D86AE1FFC8A4800590E69 /* NFCScannerTests.swift */; };
 		650D86BA1FFC8A4800590E69 /* NFCScannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650D86B91FFC8A4800590E69 /* NFCScannerUITests.swift */; };
+		650D86CA1FFC9CA100590E69 /* NDEFMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650D86C91FFC9CA100590E69 /* NDEFMessage.swift */; };
+		650D86CC1FFDA2A600590E69 /* NFCNDEFPayloadParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650D86CB1FFDA2A600590E69 /* NFCNDEFPayloadParser.swift */; };
+		650D86CD1FFDA2A600590E69 /* NFCNDEFPayloadParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650D86CB1FFDA2A600590E69 /* NFCNDEFPayloadParser.swift */; };
+		65EBC81920058A4300324CC4 /* NFCReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EBC81820058A4300324CC4 /* NFCReader.swift */; };
+		65EBC81A20058A4300324CC4 /* NFCReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EBC81820058A4300324CC4 /* NFCReader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,9 @@
 		650D86B91FFC8A4800590E69 /* NFCScannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCScannerUITests.swift; sourceTree = "<group>"; };
 		650D86BB1FFC8A4800590E69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		650D86C71FFC8A8700590E69 /* NFCScanner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NFCScanner.entitlements; sourceTree = "<group>"; };
+		650D86C91FFC9CA100590E69 /* NDEFMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDEFMessage.swift; sourceTree = "<group>"; };
+		650D86CB1FFDA2A600590E69 /* NFCNDEFPayloadParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCNDEFPayloadParser.swift; sourceTree = "<group>"; };
+		65EBC81820058A4300324CC4 /* NFCReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCReader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,7 @@
 				650D86C71FFC8A8700590E69 /* NFCScanner.entitlements */,
 				650D86991FFC8A4800590E69 /* AppDelegate.swift */,
 				650D869B1FFC8A4800590E69 /* ViewController.swift */,
+				650D86C81FFC9C8900590E69 /* NFC */,
 				650D869D1FFC8A4800590E69 /* Main.storyboard */,
 				650D86A01FFC8A4800590E69 /* Assets.xcassets */,
 				650D86A21FFC8A4800590E69 /* LaunchScreen.storyboard */,
@@ -125,6 +134,16 @@
 				650D86BB1FFC8A4800590E69 /* Info.plist */,
 			);
 			path = NFCScannerUITests;
+			sourceTree = "<group>";
+		};
+		650D86C81FFC9C8900590E69 /* NFC */ = {
+			isa = PBXGroup;
+			children = (
+				650D86C91FFC9CA100590E69 /* NDEFMessage.swift */,
+				650D86CB1FFDA2A600590E69 /* NFCNDEFPayloadParser.swift */,
+				65EBC81820058A4300324CC4 /* NFCReader.swift */,
+			);
+			path = NFC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +285,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				650D86CC1FFDA2A600590E69 /* NFCNDEFPayloadParser.swift in Sources */,
+				650D86CA1FFC9CA100590E69 /* NDEFMessage.swift in Sources */,
+				65EBC81920058A4300324CC4 /* NFCReader.swift in Sources */,
 				650D869C1FFC8A4800590E69 /* ViewController.swift in Sources */,
 				650D869A1FFC8A4800590E69 /* AppDelegate.swift in Sources */,
 			);
@@ -275,6 +297,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65EBC81A20058A4300324CC4 /* NFCReader.swift in Sources */,
+				650D86CD1FFDA2A600590E69 /* NFCNDEFPayloadParser.swift in Sources */,
 				650D86AF1FFC8A4800590E69 /* NFCScannerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
